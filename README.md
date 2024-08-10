@@ -40,11 +40,11 @@ To get BotX up and running, follow these steps:
    ```
 4. **Set Up Environment Variables**
 
-Create a .env file in the root directory of the project and add the following variables:
- ```
-  DISCORD_TOKEN=your_discord_bot_token
-GROQ_API_KEY=your_groq_api_key
-user_id=your_discord_user_id
+   Create a .env file in the root directory of the project and add the following variables:
+   ```
+   DISCORD_TOKEN=your_discord_bot_token
+   GROQ_API_KEY=your_groq_api_key
+   user_id=your_discord_user_id
 
    ```
 5. **Run the Bot**
