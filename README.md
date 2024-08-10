@@ -26,7 +26,7 @@ To get BotX up and running, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/BotX.git
+   git clone https://github.com/Haseebasif7/BotX-Discord-.git
    cd BotX
    ```
 2. **Create a Virtual Environment**
