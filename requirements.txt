@@ -1,0 +1,9 @@
+discord.py
+python-dotenv
+langchain
+langchain_community
+langchain_groq
+pynacl
+discord.py[voice]
+gtts
+ffmpeg-python
