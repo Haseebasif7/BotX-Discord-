@@ -60,6 +60,10 @@ To get BotX up and running, follow these steps:
 - **`!!logout`** - Logs out the bot (Developer only).
 - **`!!<query>`** - Ask the bot a question or request information.
 
+### Integration
+Use Below link to add BotX in your Discord Server :
+[BotX](https://discord.com/oauth2/authorize?client_id=1270669183805292638)
+
 ### Voice Interaction
 
 Ensure you are in a voice channel to receive responses in voice mode.
