@@ -62,7 +62,7 @@ To get BotX up and running, follow these steps:
 
 ### Integration
 Use Below link to add BotX in your Discord Server :
-[BotX](https://discord.com/oauth2/authorize?client_id=1270669183805292638)
+[BotX](https://shorturl.at/OHN5Q)
 
 ### Voice Interaction
 
