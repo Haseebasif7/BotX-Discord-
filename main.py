@@ -18,7 +18,8 @@ import tempfile
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger('BotX')
 
-class DropDown(View):
+
+class DropDown(View): # DropDown Class inherit from View Class
     @discord.ui.select(
         placeholder="Choose an option",
         options=[
