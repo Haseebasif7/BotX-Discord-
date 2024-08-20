@@ -14,7 +14,7 @@ import ffmpeg
 import tempfile
 
 
-# Set up logging
+# Set up logging for debugging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger('BotX')
 
@@ -49,6 +49,7 @@ You can find more about me here:
             
 
 async def get_response(query):
+    #if its not the basic commands
     if query and query not in ('voice', 'help'):
         llm = ChatGroq(
             temperature=0.5,
@@ -81,12 +82,13 @@ discord_token = os.getenv('DISCORD_TOKEN')
 intents = Intents.default()
 intents.message_content = True  # Enable message content intent
 
+# to chat with the bot
 Command_template = '!!'
 
 # Create bot instance
 bot = commands.Bot(command_prefix=Command_template, intents=intents, help_command=None)
 
-@bot.event
+@bot.event #event decorator
 async def on_ready():
     global voice
     voice=0 # default (text)
@@ -154,7 +156,7 @@ async def on_message(message):
 
             return
         
-        if query == 'quit':
+        if query == 'quit': #remove bot from voice channel
             vc = discord.utils.get(bot.voice_clients, guild=message.guild)
             if vc and vc.is_connected():
                 await vc.disconnect()
@@ -167,6 +169,7 @@ async def on_message(message):
 
 
 async def speak_text(response, voice_channel):
+    #google text to speech
     tts = gTTS(text=response, lang='en')
     
     # Create a temporary file to store the initial audio data
